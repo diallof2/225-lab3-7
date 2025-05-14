@@ -40,11 +40,11 @@ kind: Service
 metadata:
   name: prod-service
 spec:
-  type: LoadBalancer 
-loadBalancerIP: 10.48.10.214                                                                   # <-----change this!!!!
+  type: LoadBalancer
+  loadBalancerIP: 10.48.10.214                                                                  # <-----change this!!!!
   ports:
   - protocol: TCP
     port: 80
     targetPort: 80
   selector:
-    app: nginx 
+    app: nginx  
